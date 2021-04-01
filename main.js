@@ -7,22 +7,23 @@ hamburgerMenu.addEventListener("click", function() {
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-    loop:true,
+    items: 4,
     margin:10,
+    nav: false,
+    dotsEach: true,
+    startPosition: 1,
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
-            nav:true
+            startPosition: 0
         },
-        600:{
+        768:{
             items:3,
-            nav:false
+            startPosition: 0
         },
         1000:{
-            items:5,
-            nav:true,
-            loop:false
+            items:4,
         }
     }
   });
